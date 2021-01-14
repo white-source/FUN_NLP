@@ -1,0 +1,423 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 17 files
+Detected 18 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/main.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/main.py:139:10: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/utils/word2vec.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/utils/word2vec.py:27:0: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/models/rcnn.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/models/rcnn.py:54:30: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow-text-classification-master/models/rcnn.py:57:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+tensorflow-text-classification-master/models/rcnn.py:110:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/models/bilstmattn.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/models/bilstmattn.py:53:30: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow-text-classification-master/models/bilstmattn.py:56:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+tensorflow-text-classification-master/models/bilstmattn.py:95:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/models/transformer.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/models/transformer.py:29:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+tensorflow-text-classification-master/models/transformer.py:57:22: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow-text-classification-master/models/transformer.py:162:19: ERROR: Using member tf.contrib.linalg.LinearOperatorTriL in deprecated module tf.contrib. tf.contrib.linalg.LinearOperatorTriL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow-text-classification-master/models/transformer.py:233:27: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/models/bilstm.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/models/bilstm.py:53:30: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow-text-classification-master/models/bilstm.py:56:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+tensorflow-text-classification-master/models/bilstm.py:90:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: tensorflow-text-classification-master/models/textcnn.py
+--------------------------------------------------------------------------------
+tensorflow-text-classification-master/models/textcnn.py:51:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow-text-classification-master/models/textcnn.py:55:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+tensorflow-text-classification-master/models/textcnn.py:117:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'tensorflow-text-classification-master/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/main.py'
+ outputting to 'tensorflow-text-classification-master_V2/main.py'
+--------------------------------------------------------------------------------
+
+43:10: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+52:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+55:14: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+60:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+112:20: INFO: Renamed 'tf.train.global_step' to 'tf.compat.v1.train.global_step'
+139:10: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+176:10: INFO: Renamed 'tf.train.import_meta_graph' to 'tf.compat.v1.train.import_meta_graph'
+177:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+270:10: INFO: Renamed 'tf.train.import_meta_graph' to 'tf.compat.v1.train.import_meta_graph'
+271:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/config/globalConfig.py'
+ outputting to 'tensorflow-text-classification-master_V2/config/globalConfig.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/config/__init__.py'
+ outputting to 'tensorflow-text-classification-master_V2/config/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/config/fudanConfig.py'
+ outputting to 'tensorflow-text-classification-master_V2/config/fudanConfig.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/dataset/fudanDataset.py'
+ outputting to 'tensorflow-text-classification-master_V2/dataset/fudanDataset.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/dataset/__init__.py'
+ outputting to 'tensorflow-text-classification-master_V2/dataset/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/dataset/test.py'
+ outputting to 'tensorflow-text-classification-master_V2/dataset/test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/utils/metrics.py'
+ outputting to 'tensorflow-text-classification-master_V2/utils/metrics.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/utils/word2vec.py'
+ outputting to 'tensorflow-text-classification-master_V2/utils/word2vec.py'
+--------------------------------------------------------------------------------
+
+27:0: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/utils/__init__.py'
+ outputting to 'tensorflow-text-classification-master_V2/utils/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/utils/utils.py'
+ outputting to 'tensorflow-text-classification-master_V2/utils/utils.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/models/rcnn.py'
+ outputting to 'tensorflow-text-classification-master_V2/models/rcnn.py'
+--------------------------------------------------------------------------------
+
+7:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+8:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+9:31: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+27:24: INFO: Added keywords to args of function 'tf.argmax'
+35:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+35:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+41:23: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+42:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+48:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+48:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+54:30: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+54:30: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+55:58: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+57:29: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+57:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+61:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+61:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+63:21: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+63:21: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+65:35: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+66:24: INFO: Renamed 'tf.nn.rnn_cell.LSTMCell' to 'tf.compat.v1.nn.rnn_cell.LSTMCell'
+69:35: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+70:24: INFO: Renamed 'tf.nn.rnn_cell.LSTMCell' to 'tf.compat.v1.nn.rnn_cell.LSTMCell'
+77:45: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+87:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+87:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+88:21: INFO: Added keywords to args of function 'tf.shape'
+88:48: INFO: Added keywords to args of function 'tf.shape'
+93:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+93:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+97:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+97:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+99:33: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+106:17: INFO: Added keywords to args of function 'tf.reduce_max'
+109:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+109:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+110:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+110:23: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+113:28: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+118:26: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/models/__init__.py'
+ outputting to 'tensorflow-text-classification-master_V2/models/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/models/bilstmattn.py'
+ outputting to 'tensorflow-text-classification-master_V2/models/bilstmattn.py'
+--------------------------------------------------------------------------------
+
+7:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+8:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+9:31: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+26:24: INFO: Added keywords to args of function 'tf.argmax'
+34:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+34:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+40:23: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+41:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+47:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+47:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+53:30: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+53:30: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+54:58: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+56:29: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+56:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+59:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+59:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+61:25: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+61:25: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+63:39: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+64:28: INFO: Renamed 'tf.nn.rnn_cell.LSTMCell' to 'tf.compat.v1.nn.rnn_cell.LSTMCell'
+67:39: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+68:28: INFO: Renamed 'tf.nn.rnn_cell.LSTMCell' to 'tf.compat.v1.nn.rnn_cell.LSTMCell'
+75:49: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+86:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+86:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+94:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+94:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+95:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+95:23: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+98:28: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+103:26: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+116:24: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+132:22: INFO: Added keywords to args of function 'tf.transpose'
+140:17: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/models/transformer.py'
+ outputting to 'tensorflow-text-classification-master_V2/models/transformer.py'
+--------------------------------------------------------------------------------
+
+14:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+15:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+17:31: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+27:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+27:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+29:30: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+29:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+31:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+31:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+32:13: INFO: Added keywords to args of function 'tf.shape'
+35:70: INFO: Added keywords to args of function 'tf.shape'
+38:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+38:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+40:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+40:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+52:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+52:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+53:22: INFO: Changing keep_prob arg of tf.nn.dropout to rate
+
+56:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+56:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+57:22: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+57:22: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+60:28: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+65:26: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+70:35: INFO: Added keywords to args of function 'tf.argmax'
+73:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+73:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+80:25: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+82:24: INFO: Added keywords to args of function 'tf.reduce_mean'
+94:25: INFO: Added keywords to args of function 'tf.nn.moments'
+94:25: INFO: Renamed keyword argument for tf.nn.moments from keep_dims to keepdims
+117:12: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+118:12: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+119:12: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+128:33: INFO: Added keywords to args of function 'tf.transpose'
+143:34: INFO: Added keywords to args of function 'tf.reduce_sum'
+149:60: INFO: Added keywords to args of function 'tf.shape'
+156:25: INFO: Renamed 'tf.where' to 'tf.compat.v1.where'
+162:19: ERROR: Using member tf.contrib.linalg.LinearOperatorTriL in deprecated module tf.contrib. tf.contrib.linalg.LinearOperatorTriL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+163:54: INFO: Added keywords to args of function 'tf.shape'
+166:29: INFO: Renamed 'tf.where' to 'tf.compat.v1.where'
+177:18: INFO: Changing keep_prob arg of tf.nn.dropout to rate
+
+191:18: INFO: Renamed 'tf.layers.conv1d' to 'tf.compat.v1.layers.conv1d'
+199:18: INFO: Renamed 'tf.layers.conv1d' to 'tf.compat.v1.layers.conv1d'
+233:27: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+233:27: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/models/bilstm.py'
+ outputting to 'tensorflow-text-classification-master_V2/models/bilstm.py'
+--------------------------------------------------------------------------------
+
+7:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+8:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+9:31: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+26:24: INFO: Added keywords to args of function 'tf.argmax'
+34:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+34:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+40:23: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+41:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+47:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+47:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+53:30: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+53:30: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+54:58: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+56:29: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+56:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+59:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+59:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+61:21: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+61:21: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+63:35: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+64:24: INFO: Renamed 'tf.nn.rnn_cell.LSTMCell' to 'tf.compat.v1.nn.rnn_cell.LSTMCell'
+67:35: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+68:24: INFO: Renamed 'tf.nn.rnn_cell.LSTMCell' to 'tf.compat.v1.nn.rnn_cell.LSTMCell'
+75:45: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+89:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+89:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+90:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+90:23: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+93:28: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+98:26: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow-text-classification-master/models/textcnn.py'
+ outputting to 'tensorflow-text-classification-master_V2/models/textcnn.py'
+--------------------------------------------------------------------------------
+
+6:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+7:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+8:31: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+25:24: INFO: Added keywords to args of function 'tf.argmax'
+33:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+33:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+39:23: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+40:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+45:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+45:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+51:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+51:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+52:54: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+55:29: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+55:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+64:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+64:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+71:37: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+81:23: INFO: Added keywords to args of function 'tf.nn.conv2d'
+81:23: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+92:25: INFO: Added keywords to args of function 'tf.nn.max_pool'
+92:25: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+92:25: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+112:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+112:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+113:21: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+116:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+116:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+117:23: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+117:23: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+120:28: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+124:26: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3de9211-4c07-478c-862f-e29da7b0f508" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/FUN_NLP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/checkpoint/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/config/fudanConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/config/globalConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/data/Fudan/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/dataset/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/dataset/fudanDataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/dataset/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/google_clob/text_classification_rnn.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/images/bilstm/bilstm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/images/bilstmattn/bilstmattn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/images/rcnn/rcnn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/images/textcnn/textcnn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/images/transformer/transformer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/bilstm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/bilstmattn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/rcnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/textcnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/tfidf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/models/transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/process/Fudan/data_pre_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/tensorboard/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/utils/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/utils/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master/utils/word2vec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/checkpoint/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/config/fudanConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/config/globalConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/data/Fudan/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/dataset/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/dataset/fudanDataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/dataset/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/images/bilstm/bilstm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/images/bilstmattn/bilstmattn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/images/rcnn/rcnn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/images/textcnn/textcnn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/images/transformer/transformer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/models/bilstm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/models/bilstmattn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/models/rcnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/models/textcnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/models/transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/process/Fudan/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/tensorboard/占位.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/utils/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/utils/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow-text-classification-master_V2/utils/word2vec.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="3225f3bb-fc82-4cdb-a95e-1d849e7ec742" />
+  <component name="ProjectId" id="1lmVs6XjJqNVi6Ugrj1gnczAV4v" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/noob" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="FUN_NLP" is-module-sdk="true">
+        <envs>
+          <env key="PATH" value="$USER_HOME$/spark-project/software/hadoop/bin:/usr/local/Cellar/scala/2.13.1/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/bin:/Users/admin/spark-project/software/spark-2.4.4-bin-hadoop2.7/bin:/Users/admin/Software/maven//bin:/anaconda3/bin:/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/admin/mygo/bin:/usr/local/Cellar/go/1.12.6/libexec/bin:/usr/local/mysql/bin" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="FUN_NLP" />
+        <option name="myEnvs">
+          <map>
+            <entry key="PATH" value="$USER_HOME$/spark-project/software/hadoop/bin:/usr/local/Cellar/scala/2.13.1/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/bin:/Users/admin/spark-project/software/spark-2.4.4-bin-hadoop2.7/bin:/Users/admin/Software/maven//bin:/anaconda3/bin:/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/admin/mygo/bin:/usr/local/Cellar/go/1.12.6/libexec/bin:/usr/local/mysql/bin" />
+          </map>
+        </option>
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tensorflow-text-classification-master/google_clob" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.pretain_embedding">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="FUN_NLP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_pre_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FUN_NLP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow-text-classification-master/process/Fudan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow-text-classification-master/process/Fudan/data_pre_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pretain_embedding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FUN_NLP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/noob/embedding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/noob/embedding/pretain_embedding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pretain_embedding" />
+        <item itemvalue="Python.data_pre_process" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3de9211-4c07-478c-862f-e29da7b0f508" name="Default Changelist" comment="" />
+      <created>1608202456610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608202456610</updated>
+      <workItem from="1608202457956" duration="3230000" />
+      <workItem from="1608797809130" duration="7717000" />
+      <workItem from="1609746041953" duration="447000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="393" y="-875" key="#Deployment" timestamp="1608202671752">
+      <screen x="-167" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="393" y="-875" key="#Deployment/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608202671752" />
+    <state width="1401" height="389" key="DebuggerActiveHint" timestamp="1608808683034">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1867" height="466" key="DebuggerActiveHint/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608807275946" />
+    <state width="1401" height="389" key="DebuggerActiveHint/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608808683034" />
+    <state width="1396" height="180" key="GridCell.Tab.0.bottom" timestamp="1609214372819">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.0.bottom/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608807285682" />
+    <state width="1396" height="344" key="GridCell.Tab.0.bottom/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809768380" />
+    <state width="1396" height="180" key="GridCell.Tab.0.bottom/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214372819" />
+    <state width="1396" height="180" key="GridCell.Tab.0.center" timestamp="1609214372817">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.0.center/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608807285680" />
+    <state width="1396" height="344" key="GridCell.Tab.0.center/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809768379" />
+    <state width="1396" height="180" key="GridCell.Tab.0.center/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214372817" />
+    <state width="1396" height="180" key="GridCell.Tab.0.left" timestamp="1609214372816">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.0.left/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608807285679" />
+    <state width="1396" height="344" key="GridCell.Tab.0.left/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809768378" />
+    <state width="1396" height="180" key="GridCell.Tab.0.left/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214372816" />
+    <state width="1396" height="180" key="GridCell.Tab.0.right" timestamp="1609214372818">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.0.right/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608807285681" />
+    <state width="1396" height="344" key="GridCell.Tab.0.right/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809768379" />
+    <state width="1396" height="180" key="GridCell.Tab.0.right/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214372818" />
+    <state width="1396" height="346" key="GridCell.Tab.1.bottom" timestamp="1609214370935">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.1.bottom/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608806848621" />
+    <state width="1396" height="346" key="GridCell.Tab.1.bottom/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809455814" />
+    <state width="1396" height="346" key="GridCell.Tab.1.bottom/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214370935" />
+    <state width="1396" height="346" key="GridCell.Tab.1.center" timestamp="1609214370934">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.1.center/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608806848619" />
+    <state width="1396" height="346" key="GridCell.Tab.1.center/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809455811" />
+    <state width="1396" height="346" key="GridCell.Tab.1.center/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214370934" />
+    <state width="1396" height="346" key="GridCell.Tab.1.left" timestamp="1609214370932">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.1.left/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608806848618" />
+    <state width="1396" height="346" key="GridCell.Tab.1.left/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809455810" />
+    <state width="1396" height="346" key="GridCell.Tab.1.left/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214370932" />
+    <state width="1396" height="346" key="GridCell.Tab.1.right" timestamp="1609214370934">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="1876" height="285" key="GridCell.Tab.1.right/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608806848620" />
+    <state width="1396" height="346" key="GridCell.Tab.1.right/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608809455811" />
+    <state width="1396" height="346" key="GridCell.Tab.1.right/0.23.1440.811/-167.-1057.1920.1057@0.23.1440.811" timestamp="1609214370934" />
+    <state x="302" y="-901" key="SettingsEditor" timestamp="1608276907819">
+      <screen x="-167" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="302" y="-901" key="SettingsEditor/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608276907819" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1608808670506">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="960" height="540" key="XDebugger.FullValuePopup/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608807275938" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900/-167.-1080.1920.1080@0.0.1440.900" timestamp="1608808670506" />
+    <state x="555" y="-812" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1608202603010">
+      <screen x="-167" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="555" y="-812" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608202603010" />
+    <state x="458" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1608800033802">
+      <screen x="-167" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="458" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-167.-1080.1920.1080@-167.-1080.1920.1080" timestamp="1608800033802" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="glob.glob(train_path + train_dir + &quot;/*.txt&quot;)" language="Python" />
+        <watch expression="zip(label, range(len(label)))" language="Python" />
+        <watch expression="list(zip(label,label, range(len(label))))" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FUN_NLP$data_pre_process.coverage" NAME="data_pre_process Coverage Results" MODIFIED="1608809768369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow-text-classification-master/process/Fudan" />
+  </component>
+</project>
